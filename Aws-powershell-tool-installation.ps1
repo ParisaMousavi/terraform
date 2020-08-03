@@ -27,14 +27,11 @@ Initialize-AWSDefaults
 
 if (!(Import-Module AWSPowerShell) ) {Import-Module AWSPowerShell}
 
-Set-AWSCredentials -AccessKey "AKIA2KKYIFXPCBEQCERI" -SecretKey "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" -StoreAs ParisaFromPowershellProfile
+Set-AWSCredentials -AccessKey "..." -SecretKey "..." -StoreAs ParisaFromPowershellProfile
 
 Get-AWSCredentials -ListStoredCredentials
 
 Initialize-AWSDefaults -ProfileName ParisaFromPowershellProfile -Region eu-west-1
-
-Access Key Id: AKIA2KKYIFXPCBEQCERI
-Secret Access Key: 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
 
 # for installing aws services
 Install-AWSToolsModule AWS.Tools.EC2 -CleanUp

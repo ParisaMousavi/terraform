@@ -1,8 +1,8 @@
 
 provider "aws"{
     region = "eu-west-1"
-    access_key = "AKIA2KKYIFXPCBEQCERI"
-    secret_key = "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"
+    access_key = "..."
+    secret_key = "..."
 }
 
 resource "aws_s3_bucket" "log_bucket" {
