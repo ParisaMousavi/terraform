@@ -1,0 +1,26 @@
+digraph {
+	compound = "true"
+	newrank = "true"
+	subgraph "root" {
+		"[root] azurerm_resource_group.rg (expand)" [label = "azurerm_resource_group.rg", shape = "box"]
+		"[root] data.azurerm_client_config.current (expand)" [label = "data.azurerm_client_config.current", shape = "box"]
+		"[root] provider[\"registry.terraform.io/hashicorp/azurerm\"]" [label = "provider[\"registry.terraform.io/hashicorp/azurerm\"]", shape = "diamond"]
+		"[root] var.client_id" [label = "var.client_id", shape = "note"]
+		"[root] var.client_secret" [label = "var.client_secret", shape = "note"]
+		"[root] var.subscription_id" [label = "var.subscription_id", shape = "note"]
+		"[root] var.tenant_id" [label = "var.tenant_id", shape = "note"]
+		"[root] azurerm_resource_group.rg (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/azurerm\"]"
+		"[root] data.azurerm_client_config.current (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/azurerm\"]"
+		"[root] meta.count-boundary (EachMode fixup)" -> "[root] azurerm_resource_group.rg (expand)"
+		"[root] meta.count-boundary (EachMode fixup)" -> "[root] data.azurerm_client_config.current (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/azurerm\"] (close)" -> "[root] azurerm_resource_group.rg (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/azurerm\"] (close)" -> "[root] data.azurerm_client_config.current (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/azurerm\"]" -> "[root] var.client_id"
+		"[root] provider[\"registry.terraform.io/hashicorp/azurerm\"]" -> "[root] var.client_secret"
+		"[root] provider[\"registry.terraform.io/hashicorp/azurerm\"]" -> "[root] var.subscription_id"
+		"[root] provider[\"registry.terraform.io/hashicorp/azurerm\"]" -> "[root] var.tenant_id"
+		"[root] root" -> "[root] meta.count-boundary (EachMode fixup)"
+		"[root] root" -> "[root] provider[\"registry.terraform.io/hashicorp/azurerm\"] (close)"
+	}
+}
+
