@@ -1,4 +1,5 @@
 az login
+Connect-AzAccount
 
 az account list --query "[].{name:name, subscriptionId:id}"
 
