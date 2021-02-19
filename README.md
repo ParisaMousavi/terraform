@@ -35,3 +35,6 @@ provider "aws" {
 }
 
 ```
+
+# Microsoft GitHub for Azure Service in Terraform
+https://github.com/Azure/azure-quickstart-templates
