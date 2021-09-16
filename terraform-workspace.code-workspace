@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\learn-terraform-run-triggers-application"
+		},
+		{
+			"path": "..\\learn-terraform-run-triggers-network"
+		}
+	],
+	"settings": {}
+}
